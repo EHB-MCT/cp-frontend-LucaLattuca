@@ -50,7 +50,7 @@
 
 body {
   font-family: 'Geologica', sans-serif;
-
+  margin: 0;
 }
 
 
@@ -59,23 +59,33 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  height: 50px;
+  height: 80px;
 
-  background-color: rgb(249, 249, 249);
+  background-color: #E51131;
 
 }
 
 .logo {
-  font-size: 2rem;
+  width: 60px;
+  margin-left: 20px;
 }
 
 .navigation {
   display: flex;
-  gap: 10rem;    
+  gap: 2rem;    
 }
 
-.navigation h2 {
+.header-button{
+  font-family: 'Bungee', sans-serif;
+  font-size: large;
 
+  width: 150px;
+  height: 37px;
+  margin: 0;
+  background-color: white;
+  border-radius: 9px;
+ 
+  position: relative;
 }
 
 footer {

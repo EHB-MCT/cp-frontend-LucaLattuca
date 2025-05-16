@@ -1,9 +1,10 @@
 import React from 'react';
+import logo from '../assets/logo.svg';
 
 const Footer = () => {
     return (
         <footer>
-            <div id='footerLogo'>
+            <div id='logo'>
                 <img src="" alt="" />
             </div>
            <div id='aboutText'>

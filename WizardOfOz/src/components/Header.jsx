@@ -1,21 +1,28 @@
 import React from 'react';
 import { Link } from "react-router";
-
+import Button from './Button';
+import logo from '../assets/logo.svg';
 
 const Header = () => {
     return (
         <header>
             <div className='logo'>
-                <h1>Wizard Of Oz</h1>
+                <img src={logo} alt="Logo" />
             </div>
 
             <div className="navigation">
-                <h2><Link to="/">Home</Link></h2>
-                {/* <h2><Link to="/makingof">Making Of</Link></h2> */}
-                <h2><Link to="/portal">Sprookjes</Link></h2>
-                {/* <h2><Link to="/story">Story</Link></h2> */}
-                <h2><Link to="/story">About</Link></h2>
+                <Link to="/">
+                    <Button name="Home"/>
+                </Link>
+                <Link to="/portal">
+                    <Button name="Sprookje"/>
+                </Link>
+                <Link to="/About">
+                {/* take to the bottom of the home page + clicked in when on a sprookje */}
+                    <Button name="About"/>
+                </Link>
             </div>
+            <img src="" alt="" />
         </header>
     );
 };
