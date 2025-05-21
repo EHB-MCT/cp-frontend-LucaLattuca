@@ -13,8 +13,8 @@ const Button = ({name, active}) => {
         style={{
             backgroundColor: isHovered ? "black" : "white",
             color: isHovered ? "white" : "black",
-            border: isHovered? "white solid 2px" : "black solid 2px",
-            boxShadow: isHovered ? "0px 0px" : "3px 3px",
+            border: isHovered? "white solid 3px" : "black solid 3px",
+            boxShadow: isHovered ? "0px 0px" : "5px 5px",
             top: isHovered ? "3px" : "0px",
             left: isHovered ? "3px" : "0px",
 

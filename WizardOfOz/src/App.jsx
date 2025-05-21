@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router';
-import logo from './assets/logo.svg'
+import logo from './assets/portal/logo.svg'
 import './App.css'
 
 import Layout from './pages/Layout'
