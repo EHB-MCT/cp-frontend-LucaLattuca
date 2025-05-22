@@ -1,13 +1,19 @@
 import React from "react";
 import thumbnail from "../assets/fairytale/thumbnail.jpg";
+import ThemeButton from "../components/ThemeButton";
+import Stories from "../components/Stories";
+
 
 function Homepage() {
   return (
-    <div>
-      <h1>Welcome to the Homepage</h1>
-      <p>This is the main content of the homepage.</p>
-      <img src={thumbnail} alt="" />
-    </div>
+    
+    <main>
+      <ThemeButton/>
+
+      <h1>Populair</h1>  
+    
+      <Stories/>
+    </main>
   );
 }
 

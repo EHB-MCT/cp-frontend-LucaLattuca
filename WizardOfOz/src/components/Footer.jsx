@@ -23,7 +23,6 @@ const Footer = () => {
                     <p>Deze website is een portaalsite van een verzameling van sprookjesverhalen, vertelt in de vorm van een interactieve parallax website. Elk sprookje heeft zijn eigen website waarin het sprookje verteld wordt terwijl je scrollt.
                     <br />
                     <br />
-                    <br />
                     Elke sprookjessite is gemaakt door een student aan de Erasmushogeschool Brussel in het academiejaar 2024-2025, voor het vak Front-End.</p>
                 </div>
                 <div id='footer-btns'>
@@ -32,7 +31,7 @@ const Footer = () => {
                         <Button name="Home"/>
                     </Link>
                     <Link to="/portal">
-                        <Button name="Sprookje"/>
+                        <Button name="Sprookjes"/>
                     </Link>
                 </div>
 

@@ -17,7 +17,7 @@ const Header = () => {
                         <Button name="Home"/>
                     </Link>
                     <Link to="/portal">
-                        <Button name="Sprookje"/>
+                        <Button name="Sprookjes"/>
                     </Link>
                     <Link to="/About">
                     {/* take to the bottom of the home page + clicked in when on a sprookje */}

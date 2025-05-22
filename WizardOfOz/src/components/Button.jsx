@@ -7,14 +7,14 @@ const Button = ({name, active}) => {
 
   return (
     <button 
-    className="header-button" 
+    className="nav-button" 
     onMouseEnter={() => setIsHovered(true)}
     onMouseLeave={() => setIsHovered(false)}
         style={{
             backgroundColor: isHovered ? "black" : "white",
             color: isHovered ? "white" : "black",
             border: isHovered? "white solid 3px" : "black solid 3px",
-            boxShadow: isHovered ? "0px 0px" : "5px 5px",
+            boxShadow: isHovered ? "0px 0px" : "4px 4px",
             top: isHovered ? "3px" : "0px",
             left: isHovered ? "3px" : "0px",
 

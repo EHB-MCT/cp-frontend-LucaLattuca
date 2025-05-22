@@ -1,24 +1,13 @@
 import React from 'react';
+import Stories from '../components/Stories';
 
 const Portal = () => {
     return (
-        <div>
-            <div>
-                <h1>Portals</h1>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <div className='portalBox'>
-                            <h1>StoryName</h1>
-                            <img src="" alt="" />
-                            <p>description</p>
-                            <button>Open</button>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <main>
+            <h1>Sprookjes</h1>
+            <Stories/>
+
+        </main>
     );
 };
 

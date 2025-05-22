@@ -16,13 +16,13 @@ function App() {
 
    
 
-      <BrowserRouter>
+      <BrowserRouter basename='/cp-frontend-LucaLattuca'>
         <Routes>
           <Route path="/" element={<Layout />} >
             <Route index element={<Homepage />} />
             {/* <Route path="makingof" element={<MakingOf />} /> */}
             <Route path="portal" element={<Portal />} />
-            <Route path="story" element={<Story />} />
+            <Route path="story/:id" element={<Story />} />
           </Route>
         </Routes>
       </BrowserRouter>
