@@ -32,17 +32,23 @@ const Header = () => {
                 </div>
                 
             </div>
-            <section className='hero'>
+            {isHomePage && (
+                <section className="hero">
                 <div className='hero-text'>
-                    <div className='logo'>
-                        <img src={logo} alt="Logo" />
-                    </div>
-                    <div>
+                    
+                        <div className='logo'>
+                            <img src={logo} alt="Logo" />
+                        </div>
+            
                         <p>De sprookjes portaalsite voor alle interactieve sprookjeservaringen</p>
-                    </div>
+                    
+
                 </div>
                 <SearchBar/>
             </section>
+            )}
+            
+            
 
             {/*TODO  Searchbar appears when om home page */}
             
