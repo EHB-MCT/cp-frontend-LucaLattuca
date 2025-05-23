@@ -1,10 +1,11 @@
 import React from "react";
-import thumbnail from "../assets/fairytale/thumbnail.jpg";
+
 import ThemeButton from "../components/ThemeButton";
 import Stories from "../components/Stories";
 
 
 function Homepage() {
+
   return (
     
     <main>

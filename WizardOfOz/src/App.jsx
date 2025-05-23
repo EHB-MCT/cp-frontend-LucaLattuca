@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { ThemeProvider } from './components/ThemeProvider';
 import { BrowserRouter, Routes, Route } from 'react-router';
 import logo from './assets/portal/logo.svg'
 import './App.css'
@@ -15,7 +15,7 @@ function App() {
     <>
 
    
-
+      <ThemeProvider>
       <BrowserRouter basename='/cp-frontend-LucaLattuca'>
         <Routes>
           <Route path="/" element={<Layout />} >
@@ -26,6 +26,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
+      </ThemeProvider>
     </>
    
   );
