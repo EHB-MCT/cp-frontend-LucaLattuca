@@ -1,9 +1,10 @@
 import React, { use } from 'react';
-import { Link, useLocation } from "react-router";
+import { Link, useLocation } from "react-router-dom";
 import Button from './Button';
+import SearchBar from './Searchbar';
+
 import logo from '../assets/portal/logo.svg';
 import divider from '../assets/portal/divider.svg';
-import SearchBar from './Searchbar';
 
 const Header = () => {
     // hook to get the curent location
@@ -40,11 +41,11 @@ const Header = () => {
                             <img src={logo} alt="Logo" />
                         </div>
             
-                        <p>De sprookjes portaalsite voor alle interactieve sprookjeservaringen</p>
-                    
+                        <h1>De sprookjes portaalsite voor alle interactieve sprookjeservaringen</h1>
+
 
                 </div>
-                <SearchBar/>
+                <SearchBar />
             </section>
             )}
             

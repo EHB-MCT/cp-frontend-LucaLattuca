@@ -1,9 +1,14 @@
 import React, {useEffect, useState} from "react";
 
 
-const Stories = () => {
+const Stories = ({query= ""}) => {
     const [stories, setStories] = useState([]);
     const [loading, setLoading] = useState(true);
+
+    const filteredStories = stories.filter((story) => 
+        story.fairytale.toLowerCase().includes(query.toLowerCase())
+    );
+    
 
     useEffect(() => {
         const fetchStories = async () => {
@@ -30,10 +35,13 @@ const Stories = () => {
     
     return (
         <ul id="stories">
-            {stories.map((story) => (
+            {filteredStories.map((story) => (
                 <li className="story" key={story.id}>
-                    <img src={story.imgThumbnail} alt={story.imgThumbnail} />
-                    <h2>{story.fairytale}</h2>
+                    {/* TODO */}
+                    
+                        <img src={story.imgThumbnail} alt={story.imgThumbnail} />
+                        <h2>{story.fairytale}</h2>
+                    
                 </li>
             ))}
         </ul>

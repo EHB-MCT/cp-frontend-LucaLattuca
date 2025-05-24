@@ -1,5 +1,5 @@
 import { ThemeProvider } from './components/ThemeProvider';
-import { BrowserRouter, Routes, Route } from 'react-router';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import logo from './assets/portal/logo.svg'
 import './App.css'
 
@@ -23,6 +23,8 @@ function App() {
             {/* <Route path="makingof" element={<MakingOf />} /> */}
             <Route path="portal" element={<Portal />} />
             <Route path="story/:id" element={<Story />} />
+            <Route path="makingof" element={<MakingOf />} />
+
           </Route>
         </Routes>
       </BrowserRouter>

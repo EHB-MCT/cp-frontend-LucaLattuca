@@ -3,11 +3,11 @@ import logo from '../assets/portal/logo.svg';
 import Button from './Button';
 import divider from '../assets/portal/divider.svg';
 
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <footer>
-            
+            {/* TODO footer theme  */}
           
             <img id='footer-divider' src={divider} alt="footerDivider" />  
             
