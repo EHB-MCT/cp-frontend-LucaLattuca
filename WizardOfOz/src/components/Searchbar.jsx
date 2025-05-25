@@ -1,5 +1,5 @@
 import React from "react";
-import searchIcon from '/cp-frontend-LucaLattuca/searchIcon.svg';
+import searchIcon from '../assets/search-icon.svg';
 
 const Searchbar = ({ query, setQuery }) => {
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link, useLocation } from "react-router-dom";
 import Button from './Button';
 import SearchBar from './Searchbar';
@@ -6,10 +6,10 @@ import SearchBar from './Searchbar';
 import logo from '../assets/portal/logo.svg';
 import divider from '../assets/portal/divider.svg';
 
-const Header = () => {
+const Header = ({ query, setQuery }) => {
     // hook to get the curent location
     const location = useLocation();
-    
+
 
     const isHomePage = location.pathname === '/';
     const isMakingOfPage = location.pathname === '/makingof';
@@ -52,7 +52,7 @@ const Header = () => {
 
 
                 </div>
-                <SearchBar />
+                <SearchBar query={query} setQuery={setQuery} />
             </section>
             )}
             

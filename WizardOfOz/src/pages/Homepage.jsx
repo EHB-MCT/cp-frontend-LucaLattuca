@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { useOutletContext } from "react-router-dom";
 import {useTheme} from "../components/ThemeProvider"
 
 import ThemeButton from "../components/ThemeButton";
@@ -7,7 +8,7 @@ import Stories from "../components/Stories";
 
 function Homepage() {
   const {theme} = useTheme();
-
+  const { query } = useOutletContext();
   return (
     
     <main>
@@ -17,7 +18,7 @@ function Homepage() {
           <ThemeButton/>
         </div>      
    
-        <Stories/>
+        <Stories query={query}/>
       </div>
     </main>
   );

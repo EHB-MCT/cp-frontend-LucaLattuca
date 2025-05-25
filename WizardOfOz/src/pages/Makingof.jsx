@@ -2,7 +2,7 @@ import React, {useEffect, useState, useRef} from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
 import ThemeButton from "../components/ThemeButton";
-import arrowButton from "/cp-frontend-LucaLattuca/change-carousel-item.svg"
+import arrowButton from "../assets/makingOf/change-carousel-item.svg"
 import Button from "../components/Button";
 
 import {useTheme} from "../components/ThemeProvider"
