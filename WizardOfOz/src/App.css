@@ -57,12 +57,7 @@ html, body {
   flex-direction: column;
 }
 
-body.dark {
-  background-color: black;
-}
-body.light {
-  background-color: #EBF5EC;
-}
+
 
 /* Header */
 
@@ -73,7 +68,6 @@ header {
   
   background-color: #E51131;
 
-  margin-bottom: 90px;
 }
 
 /* sprookjes header */
@@ -234,9 +228,26 @@ header {
 
 /* Main content */
 
+.container {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 130px;
+  padding-top: 90px;
+}
+.container.dark {
+  background-color: black;
+}
+.container.light {
+  background-color: #EBF5EC;
+}
+
 .main-top {
   display: flex;
   justify-content: space-between;
+}
+
+.main-top.dark h1 {
+  border-color: white;
 }
 
 .main-top .searchBar {
@@ -341,7 +352,7 @@ main h1 {
   font-size: 40px;
 }
 
-
+/* stories */
 
 #stories {
   display: flex;
@@ -353,7 +364,10 @@ main h1 {
   gap: 17px;
 
 }
-
+#stories a {
+  text-decoration: none;
+  color: black;
+}
 .story {
 
   border-radius: 15px;
@@ -363,12 +377,10 @@ main h1 {
 
   border: black 4px solid ;
   transition: all 0.3s ease;
+
+  cursor: pointer;
 }
 
-.story:hover {
-  /* border-color: transparent;      */
-  box-shadow: 0 0 0 2px black ; 
-}
 
 
 .story img {
@@ -378,26 +390,62 @@ main h1 {
   display: block; 
 }
 
-.story img:hover {
-  transform: translate(-1px, 1px);
-  transition: transform 0.3s ease-in-out;
-}
 
 
-.story h2 {
+.story-info {
   position: absolute;
   bottom: 0px;
   text-align: center;
+  
   margin: 7px;
-  padding: 0px;
 
   border: black solid 2px;
-  border-radius: 12px;
+  border-radius: 10px;
   background-color: white;
 
-  /* left: 7px; */
+
   width: 95%;
+  height: 30px;
 }
+.story:hover .story-info {
+  height: 90px;
+}
+
+.story-info h2 {
+  font-family: 'Bungee', sans-serif;
+  font-weight: 100;
+  font-size:18px;
+  margin: 0px;
+}
+.story:hover .story-info h2 {
+  margin-top: 20px;
+}
+
+.story-info h3 {
+  visibility: hidden;
+  margin: 0px;
+}
+.story:hover .story-info h3 {
+  visibility: visible;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 332px;
+  height: 332px;
+
+  background-color: rgba(0, 0, 0, 0.452);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+}
+.story:hover .overlay {
+  opacity: 1;
+}
+
+
 
 
 /* Making of */
@@ -410,7 +458,9 @@ main h1 {
   border: 5px solid black;
   border-radius: 16px;
 }
-
+.story-template.dark {
+  border-color: white;
+}
 
 .banner {
   position: relative;
@@ -447,11 +497,29 @@ main h1 {
   margin: 0px 20px 20px 20px;
 }
 
-.story-info {
+#visit-story {
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0px 0px black;
+  width: 230px;
+  height: 80px;
+
+  margin-left: 50px;
+  margin-top: 30px;
+
+  font-family: 'Bungee', sans-serif;
+  font-size: larger;
+  background-color: #E51131;
+  color: white;
+  cursor: pointer;
+}
+
+
+.explainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 /* sectiontitle  */
@@ -460,6 +528,7 @@ main h1 {
   align-items: center;
   margin-left: 10px;
   margin-right: 10px;
+  width: 100%;
 }
 .section-title h2 {
   font-weight: 500;
@@ -477,7 +546,7 @@ main h1 {
 .explainer-section {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+
   width: 90%;
 }
 
@@ -499,44 +568,76 @@ main h1 {
   font-size: large;
   color: rgb(54, 54, 54);
 }
+
+/* Extra images */
+/* https://chatgpt.com/share/6831f91e-15c4-800a-9b66-6d1197285326 : style carousel */
+
 .extra-images {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
+
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  margin-top: 20px;
 }
 
-/* carousel slider */
+.extra-images .section-title {
+  width: 89%;
+}
 
-  .slider-container {
-  width: 100%;
-  max-width: 1200px; /* or whatever fits your layout */
-  margin: 0 auto;
-  overflow: hidden; /* prevents overflow */
-  }
+/* carousel */
+.slider-container {
+  width: 95%;
+  height: 350px;
   
-  .carousel-item {
-    background: #f8f8f8;
-    padding: 20px; /* reduce padding to prevent overflow */
-    border-radius: 12px;
-    border: 1px solid #ccc;
-    text-align: center;
-    font-size: 1.2rem;
-    height: 100%;
-    box-sizing: border-box;
-  }
-
-  .slider-container .slick-slide > div {
-  margin: 0 10px;
-}
-
-.slider-container .slick-list {
-  margin: 0 -10px;
   overflow: hidden;
 }
+
+.carousel-item {
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+
+  width: 300px;
+  height: 300px;
+
+  box-sizing: border-box;  
+}
+
+/* Force slick to display horizontally */
+.slider-container .slick-track {
+  display: flex !important;
+}
+
+/* Ensure slick-slide does not stack */
+.slider-container .slick-slide {
+  display: flex !important;
+  justify-content: center;
+}
+
+.slider-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 97%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.slider-nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.slider-nav img {
+  width: 30px;
+  height: 30px;
+}
+
+
+
 /* Footer */
 
 footer {
@@ -545,7 +646,7 @@ footer {
   align-items: center;
 
   height: 340px;
-  margin-top: 130px;
+  /* margin-top: 130px; */
 
   background-color: black;
 }

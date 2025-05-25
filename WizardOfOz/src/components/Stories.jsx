@@ -1,7 +1,9 @@
-import React, {useEffect, useState} from "react";
-
+import React, {use, useEffect, useState} from "react";
+import { useNavigate } from "react-router";
 
 const Stories = ({query= ""}) => {
+    const navigate = useNavigate();
+
     const [stories, setStories] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -36,13 +38,20 @@ const Stories = ({query= ""}) => {
     return (
         <ul id="stories">
             {filteredStories.map((story) => (
-                <li className="story" key={story.id}>
-                    {/* TODO */}
-                    
-                        <img src={story.imgThumbnail} alt={story.imgThumbnail} />
-                        <h2>{story.fairytale}</h2>
-                    
-                </li>
+                
+                    <li className="story" key={story.id}
+                    onClick={() => navigate(`/makingof/${story.id}`)}
+                        
+                    >
+                        {/* TODO */}
+                            <img src={story.imgThumbnail} alt={story.imgThumbnail} />
+                            <div className="overlay"></div>   
+                            <div className="story-info">
+                                <h2>{story.fairytale}</h2>
+                                <h3>{story.nameStudent}</h3>
+                            </div>
+                    </li>
+                
             ))}
         </ul>
     );

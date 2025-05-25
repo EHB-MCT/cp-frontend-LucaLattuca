@@ -8,6 +8,7 @@ const Searchbar = ({ query, setQuery }) => {
         <div className="searchBar">
             
             <img src={searchIcon} alt="Search icon" />
+           
             <input type="text" placeholder="  Zoek hier naar een sprookje..." 
                 value={query} 
                 onChange={(e) => setQuery(e.target.value)} 

@@ -1,4 +1,4 @@
-import React, { use } from 'react';
+import React from 'react';
 import { Link, useLocation } from "react-router-dom";
 import Button from './Button';
 import SearchBar from './Searchbar';
@@ -9,8 +9,10 @@ import divider from '../assets/portal/divider.svg';
 const Header = () => {
     // hook to get the curent location
     const location = useLocation();
+    
 
     const isHomePage = location.pathname === '/';
+    const isMakingOfPage = location.pathname === '/makingof';
 
     return (
         <header className={`header ${isHomePage ? "large-header" : "small-header"}`} >
@@ -26,10 +28,15 @@ const Header = () => {
                     <Link to="/portal">
                         <Button name="Sprookjes"/>
                     </Link>
-                    <Link to="/About">
-                    {/* TODO take to the bottom of the home page + clicked in when on a sprookje */}
-                        <Button name="About"/>
+                    {isMakingOfPage ? (
+                    
+                    <Link to="/makingof">
+                        <Button name="Making Of"/>
                     </Link>
+                    
+                    ) : (
+                        <Button name="About"/>
+                    )}
                 </div>
                 
             </div>

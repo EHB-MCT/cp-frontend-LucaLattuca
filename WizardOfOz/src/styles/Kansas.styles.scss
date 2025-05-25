@@ -1,0 +1,79 @@
+.body {
+    background-color: white;
+}
+.story-screen {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* full screen height */
+  overflow: hidden;
+}
+
+.background-kansas {
+    position: fixed;
+    bottom: 32vh;
+    
+}
+
+.story-title {
+    position: fixed;
+    width: 30%;
+   
+}   
+
+.kansas-fence {
+    width: 48vw;
+    position: fixed;
+    bottom: 0;
+}
+
+.farm-house {
+    position: fixed;
+    width: 20%;
+    bottom: 25vh;
+    right: 10vw;
+}
+
+.dorothy-house {
+    position: fixed;
+    width: 11%;
+    bottom: 34vh;
+    right: 55vw;
+
+}
+.cloud-1 {
+    position: fixed;
+    width: 20%;
+    bottom: 36vh;
+    right: 32vw;
+}
+.cloud-2 {
+    position: fixed;
+    width: 24%;
+    bottom: 53vh;
+    right: 45vw;
+}
+
+.cloud-3 {
+    position: fixed;
+    width: 22%;
+    bottom: 70vh;
+    right: 20vw;
+
+}
+
+.dorothy-fence {
+    width: 13%;
+    position: fixed;
+    bottom: 28vh;
+    left: 15vw;
+    rotate: 4deg;
+}
+
+.toto-fence {
+    width: 10%;
+    position: fixed;
+    bottom: 28vh;
+    left: 4vw;
+    rotate: 0deg;
+    
+}
