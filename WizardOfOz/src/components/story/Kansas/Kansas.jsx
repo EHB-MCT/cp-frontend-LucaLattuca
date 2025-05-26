@@ -4,17 +4,21 @@ import { motion, transform, useScroll, useTransform } from 'framer-motion';
 const kansas = () => {
     const { scrollYProgress } = useScroll();
 
+    const x = useTransform(scrollYProgress, [0, 0.25, 0.5, 0.75, 1], [0, 0, 0, 0, 500]);
+    const y = useTransform(scrollYProgress, [0, 0.25, 0.5, 0.75, 1], [0, 0, 0, 0, 300]);
 
-    scrollYProgress.onChange((latest) => {
-        console.log("Scroll progress:", latest);
-    });
+    // scrollYProgress.onChange((latest) => {
+    //     console.log("Scroll progress:", latest);
+    // });
     return (
         <>
             <motion.img
                 className='background-kansas'
                 src="/cp-frontend-LucaLattuca/story/backgrounds/kansas-background.svg"
                 alt='background-kansas'
-                initial={{y:0}}
+                style={{
+                    y,
+                }}
             />
 
             {/* Houses */}
@@ -23,13 +27,16 @@ const kansas = () => {
                 className='dorothy-house'
                 src="/cp-frontend-LucaLattuca/story/buildings/dorothy-house.svg"
                 alt='dorothy-house'
-                initial={{y:0, x:0}}
+
             />
             <motion.img
                 className='farm-house'
                 src="/cp-frontend-LucaLattuca/story/buildings/farm-house.svg"
                 alt='farm-house'
-                initial={{y:0, x:0}}
+                style={{
+                    y,
+                    x,
+                }}
             />
 
         </>

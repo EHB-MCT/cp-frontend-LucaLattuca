@@ -2,12 +2,12 @@ import React from 'react';
 import { motion, transform, useScroll, useTransform } from 'framer-motion';
 
 const DorothyKansas = () => {
-    const { scrollYProgress } = useScroll();
+    // const { scrollYProgress } = useScroll();
 
 
-    scrollYProgress.onChange((latest) => {
-        console.log("Scroll progress:", latest);
-    });
+    // scrollYProgress.onChange((latest) => {
+    //     console.log("Scroll progress:", latest);
+    // });
     return (
         <>
             <motion.img
