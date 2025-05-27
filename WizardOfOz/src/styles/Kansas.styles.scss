@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap');
+
 .body {
     background-color: white;
 }
@@ -85,3 +87,15 @@
     
 }
 
+.kansas-text {
+    color: black;
+    position: absolute;
+    top: 170px;
+    left: 560px;
+
+    font-family: "Glass Antiqua", cursive;
+    font-weight: 500;
+    font-size: 29px;
+    width: 38%;
+    font-style: normal;
+}

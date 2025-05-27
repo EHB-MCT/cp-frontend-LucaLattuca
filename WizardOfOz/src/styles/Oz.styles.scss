@@ -1,0 +1,82 @@
+.munchkinland-ground {
+    position: absolute;
+    
+
+    width: 100%;
+}
+
+.dorothy-house-oz{
+    position: absolute;
+    width: 80%;
+    left: -500px;
+    bottom: 300px;
+}
+
+.dorothy-oz-shoes-black{
+    position: absolute;
+    width: 13%;
+    bottom: 10vh;
+    left: 40vw;
+}
+
+.dorothy-oz-shoes-red{
+    position: absolute;
+    width: 15%;
+    bottom: 10vh;
+    left: 40vw;
+}
+
+.witch-feet-red{
+    position: absolute;
+    width: 8%;
+    bottom: 36vh;
+    left: 10vw;
+        
+}
+
+.toto-rollover-container {
+    position: relative;
+    width: 100px;
+    height: 130px;
+    overflow: hidden;
+    left: 510px;
+    top: 90px;
+}
+
+.toto-rollover {
+    position: absolute;
+    height: 100%;
+}
+
+.toto-color {
+  height: 95%;
+}
+
+.hover-target {
+  position: absolute;
+  
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  
+  z-index: 1;
+}
+
+.sparkle {
+    position: absolute;
+    width: 40%;
+    left: 27%;
+    bottom: -30px;
+}
+
+.to-be-continued {
+    position: absolute;
+    font-family: "Glass Antiqua", cursive;
+    width: 100%;
+    bottom: 40vh;
+    height: 40px;
+    text-align: center;
+    font-size: 100px;
+    color: black
+}
