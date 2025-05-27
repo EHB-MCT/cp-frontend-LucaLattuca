@@ -55,7 +55,7 @@ function Makingof() {
             arrows: false,
         };
 
-        story.fairytaleLink = "https://ehb-mct.github.io/cp-frontend-LucaLattuca/"
+        story.fairytaleLink = story.fairytaleLink
         const handleGoToClick = () => {
           window.open(story.fairytaleLink, "_blank");
         }
@@ -73,7 +73,7 @@ function Makingof() {
                     <img src={story?.imgBanner || undefined} alt="banner" />
 
                     <div className="student-info">
-                        <h2 id="story-name">{story.fairytale}</h2>
+                        <h2 id="story-name">{story.fairytale} ({story.fairytaleAuthor})</h2>
                         <h3 id="student-name">{story.nameStudent}</h3>
                     </div>
                 </div>
@@ -84,18 +84,15 @@ function Makingof() {
 
                 <div className="explainer-section">
                     <div className="section-title">
-                        {/* if video exists */}
+                       
                         <h2>Video - Explainer Movie</h2> <hr />
-                        {/* else */}
-                        {/* <h2> verhaallijn  </h2> */}
                         
                     </div>
                     <div className="section-info">
-                        {/* if video exists, else */}
-                        <video  >
-                            {/* <source src="" type=""/> */}
-                        </video>
+                       
+                        <iframe src={`https://www.youtube.com/embed/${story.videoExplainer}`} allowFullScreen frameBorder="0" title={story.fairytale}></iframe>
                         <p>{story.description}</p>
+                        
                     </div>
                 </div>
 

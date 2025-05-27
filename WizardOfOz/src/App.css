@@ -521,6 +521,14 @@ main h1 {
   width: 380px;
   border-radius: 15px;
 }
+
+.section-info iframe {
+  border: 3px solid black;  
+  height: 250px;
+  width: 380px;
+  border-radius: 15px;
+  
+}
 .section-info p {
   margin: 30px;
   font-size: large;

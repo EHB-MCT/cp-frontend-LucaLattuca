@@ -32,6 +32,8 @@ https://chatgpt.com/share/6831f91e-15c4-800a-9b66-6d1197285326 : chatGPT used to
 https://chatgpt.com/share/68322592-fb60-800a-916e-890cbc21bd6b : chatGPT used to write filter out empty imgurls functionality
 https://react-slick.neostack.com/docs/example/multiple-items
 
+https://chatgpt.com/share/68322592-fb60-800a-916e-890cbc21bd6b : filter empty img urls 
+https://chatgpt.com/share/6831f91e-15c4-800a-9b66-6d1197285326 : style carousel 
 ### packages 
 
 https://react-slick.neostack.com/ : react slick used for image carousel on the makingOf page
