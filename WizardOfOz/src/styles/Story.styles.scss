@@ -1,7 +1,47 @@
 
-.story-screen {
+.parallax-content {
+    
+    background-color: white;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    height: 4000vh;
+}
+
+.kansas-wrapper {
+  
+  height: 1100vh;
   position: relative;
+}
+.kansas {
+  
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  background-color: white;
+}
+
+.sky-wrapper {
+  height: 1500vh;
+  position: relative;
+}
+.sky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.munchkinLand {
+  position: sticky;
+  top: 0;
+
   width: 100%;
-  height: 2000vh; /* full screen height */
- 
+  background-color: rgb(108, 200, 236);
+
+  height: 100vh;
 }

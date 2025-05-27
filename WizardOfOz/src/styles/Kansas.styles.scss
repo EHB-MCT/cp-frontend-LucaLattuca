@@ -4,13 +4,13 @@
 
 
 .background-kansas {
-    position: fixed;
+    position: absolute;
     bottom: 32vh;
     
 }
 
 .story-title {
-    position: fixed;
+    position: absolute;
     width: 30%;
     top: 3vh;
     left: 2vw;
@@ -18,19 +18,19 @@
 
 .kansas-fence {
     width: 48vw;
-    position: fixed;
+    position: absolute;
     bottom: 0;
 }
 
 .farm-house {
-    position: fixed;
+    position: absolute;
     width: 20%;
     bottom: 25vh;
     right: 10vw;
 }
 
 .dorothy-house {
-    position: fixed;
+    position: absolute;
     width: 11%;
     bottom: 34vh;
     right: 55vw;
@@ -44,14 +44,14 @@
 }
 
 .cloud-1 {
-    position: fixed;
+    position: absolute;
     width: 20%;
     bottom: 36vh;
     
     
 }
 .cloud-2 {
-    position: fixed;
+    position: absolute;
     width: 24%;
     bottom: 53vh;
     
@@ -59,7 +59,7 @@
 }
 
 .cloud-3 {
-    position: fixed;
+    position: absolute;
     width: 22%;
     bottom: 70vh;
     
@@ -71,7 +71,7 @@
 
 .dorothy-fence {
     width: 13%;
-    position: fixed;
+    position: absolute;
     bottom: 28vh;
     left: 15vw;
     rotate: 4deg;
@@ -79,9 +79,9 @@
 
 .toto-fence {
     width: 10%;
-    position: fixed;
+    position: absolute;
     bottom: 28vh;
     left: 4vw;
-    rotate: 0deg;
     
 }
+

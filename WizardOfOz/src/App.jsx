@@ -1,5 +1,5 @@
 import { ThemeProvider } from './components/ThemeProvider';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import logo from './assets/portal/logo.svg'
 import './App.css'
 
@@ -18,13 +18,12 @@ function App() {
 
    
       <ThemeProvider>
-      <BrowserRouter basename='/cp-frontend-LucaLattuca'>
+      <HashRouter>
         <Routes>
 
           {/* portal page routes */}
           <Route path="/" element={<Layout />} >
             <Route index element={<Homepage />} />
-            {/* <Route path="makingof" element={<MakingOf />} /> */}
             <Route path="portal" element={<Portal />} />
             <Route path="makingof/:id" element={<MakingOf />} />
           </Route>
@@ -32,7 +31,7 @@ function App() {
           {/* story route */}
           <Route path="story" element={<Story />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       </ThemeProvider>
     </>
    

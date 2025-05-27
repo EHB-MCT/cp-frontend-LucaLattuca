@@ -1,14 +1,13 @@
 import React from 'react';
 import { motion, transform, useScroll, useTransform } from 'framer-motion';
 
-const Title = () => {
-    const { scrollYProgress } = useScroll();
+const Title = ({progress}) => {
+ 
 
-    // const scale = useTransform(scrollYProgress, [0, 0.25, 0.5, 0.75, 1], [300, 300, 300, 300, 300]);
+    const scale = useTransform(progress, [0, 0.7, 1], ["100%", "100%", "1%"]);
+    const rotate = useTransform(progress, [0, 0.7, 1], ["0deg", "0deg", "1080deg"]);
 
-    scrollYProgress.onChange((latest) => {
-        console.log("Scroll progress:", latest);
-    });
+    
     return (
         <>
             <motion.img
@@ -16,7 +15,8 @@ const Title = () => {
                 src="/cp-frontend-LucaLattuca/story/story-title.svg"
                 alt='story-title'
                 style={{
-                    
+                    scale,
+                    rotate
                 }}
             />
         </>

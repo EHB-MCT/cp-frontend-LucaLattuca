@@ -1,14 +1,12 @@
-import React, {useRef} from 'react';
-import { motion, transform, useScroll, useTransform } from 'framer-motion';
+import { motion, useTransform } from 'framer-motion';
 
-const Tornado = () => {
-      // No target ref, use full page scroll progress
-    const { scrollYProgress } = useScroll();
+const Tornado = ({progress}) => {
+   
 
     // Animate x and scale based on scrollYProgress (0 to 1)
-    const x = useTransform(scrollYProgress, [0, 0.25, 0.5, 0.75, 1], [20, -30, 0, -100, -1700]);
-    const y = useTransform(scrollYProgress, [0, 0.25, 0.5, 0.75, 1], [0, 0, 0, 0, -300]);
-    const scale = useTransform(scrollYProgress, [0, 0.25, 0.5, 0.75, 1], [0.4, 0.8, 1.2, 2, 5]);
+    const x = useTransform(progress, [0, 0.25, 0.5, 0.75, 1], [20, -30, 0, -100, -1600]);
+    const y = useTransform(progress, [0, 0.25, 0.5, 0.75, 1], [0, 0, 0, 0, -300]);
+    const scale = useTransform(progress, [0, 0.25, 0.5, 0.75, 1], [0.4, 0.8, 1.2, 2, 5]);
 
     return (   
 
@@ -20,7 +18,7 @@ const Tornado = () => {
                 y,
                 x,
                 scale,
-                position: 'fixed',   
+                position: 'absolute',   
                 bottom: '20vh',
                 right: '0vw',
                 width: '150px',       
