@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion, useScroll, useTransform } from "framer-motion";
+import { useScroll} from "framer-motion";
 import { useRef } from "react";
 
 
@@ -31,8 +31,7 @@ import TotoRollover from '../components/story/oz/TotoRollover.jsx';
 import Sparkle from '../components/story/oz/Sparkle.jsx';
 
 
-// import Cloud from './Cloud';
-// import Character from './Character';
+
 const Story = () => {
     const kansasWrapperRef = useRef(null);
     

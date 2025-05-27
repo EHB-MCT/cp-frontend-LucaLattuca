@@ -1,5 +1,4 @@
 import { motion, useTransform } from 'framer-motion';
-// import { useInView } from 'react-intersection-observer';
 
 const Clouds = ({progress}) => {
     
@@ -20,7 +19,7 @@ const Clouds = ({progress}) => {
     return (
         <section className="clouds-container">
 
-{/* Clouds */}
+
             <motion.img
             className='cloud-1'
             src="/cp-frontend-LucaLattuca/story/clouds/cloud-1.svg"

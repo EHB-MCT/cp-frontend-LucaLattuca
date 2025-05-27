@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion, transform, useScroll, useTransform } from 'framer-motion';
+
+import { motion, useTransform } from 'framer-motion';
 
 const Sparkle = ({progress}) => {
  

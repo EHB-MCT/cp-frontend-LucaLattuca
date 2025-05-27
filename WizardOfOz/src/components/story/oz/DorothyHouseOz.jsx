@@ -1,7 +1,7 @@
-import React, {useRef} from 'react';
-import { motion, transform, useScroll, useTransform } from 'framer-motion';
 
-const DorothyHouseOz = ({progress}) => {
+import { motion} from 'framer-motion';
+
+const DorothyHouseOz = () => {
     
      
     return (   

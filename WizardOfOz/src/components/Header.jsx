@@ -7,7 +7,6 @@ import logo from '../assets/portal/logo.svg';
 import divider from '../assets/portal/divider.svg';
 
 const Header = ({ query, setQuery }) => {
-    // hook to get the curent location
     const location = useLocation();
 
 
